@@ -1,0 +1,166 @@
+/* Desktop */
+@media (min-width: 765.98px) {
+    .jumbotron{
+       
+        height: 400px;
+        margin-top: -60px;
+        background-position:inherit;
+        padding-left: 0%;
+        padding-right: 100%;
+        color: black;
+        text-align: center;
+        background-attachment: fixed;
+    } 
+
+    .navbar-brand, .nav-link{
+        color: rgb(0, 0, 0) !important;
+       
+    }
+
+    .display-4{
+        margin-top: 140px;
+    
+    }
+
+    .border-bt{
+        border-bottom: rgb(0, 140, 255) 3px solid;
+        width: 200px;
+        height: 45px;
+
+    }
+
+    .gambar{
+       width: 300px;
+       height: 200px;
+       position:inherit
+    }
+
+    .section-bg{
+        text-align: center;
+        background-color: lightgray;
+        padding: 10px;
+    }
+
+    .card{
+        margin: 10%;
+       
+    }
+
+    .cth-produk{
+        text-align: center;
+        border-bottom: rgb(0, 153, 255) 3px solid;
+        margin-bottom: 10px;
+    }
+    
+    .more{
+        text-align: end;
+        background-color: lightgrey;
+    }
+
+    .section{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: rgb(0, 162, 255) 3px solid;
+    }
+
+   
+
+    .border-ft{
+        border-bottom: white 3px solid;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
+        width: 190px;
+        text-align: justify;
+
+    }
+
+    body{
+        font-family: 'Righteous', cursive !important;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+
+    .required_hidden{
+        visibility: hidden;
+        color:rgb(0, 89, 255);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 767.98px){
+    .jumbotron{
+       
+        height: 500px;
+        color: white;
+        text-align: center;
+    }
+
+    .display-4{
+        margin-top: 150px;
+    }
+
+    .border-bt{
+        border-bottom: orange 3px solid;
+        width: 21%;
+        height: 45px;
+    }
+
+    .gambar{
+        width: 425px;
+        height: 400px;
+     }
+
+     .section-bg{
+        text-align: center;
+        margin-top: 10px;
+
+    }
+
+    .card{
+        margin: 10px;
+        margin-left: 60px;
+    }
+
+    .cth-produk{
+        text-align: center;
+        border-bottom: orange 3px solid;
+    }
+    
+    .more{
+        text-align: end;
+    }
+
+    .section{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: orange 3px solid;
+    }
+
+    .footer{
+        background-color: darkorange;
+        color: white;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .border-ft{
+        border-bottom: white 3px solid;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
+        width: 190px;
+        text-align: justify;
+
+    }
+
+    body{
+        font-family: 'Righteous', cursive !important;
+    }
+
+}
