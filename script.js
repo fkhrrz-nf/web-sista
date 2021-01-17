@@ -9,5 +9,13 @@ $(document).ready(function(){
 
 function kirim() {
     alert("Terima Kasih atas Saran Dan Masukan nya :)");
-    console.log("Terima Kasih atas Saran Dan Masukan nya :)");
+    // console.log("Terima Kasih atas Saran Dan Masukan nya :)");
 }
+
+$(".table>tbody>tr").click((e) => {
+    $("#detailJadwal").modal('show')
+})
+
+$("#btnDaftarPeserta").click((e) => {
+    $("#daftarPeserta").modal('show')
+})
