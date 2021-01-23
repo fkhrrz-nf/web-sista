@@ -23,7 +23,7 @@
 
     <style type="text/css">
         * { font-family: 'Source Sans Pro', sans-serif; }
-        .table > tbody > tr {
+        .container > .row > .table > tbody > tr {
             cursor: pointer;
         }
     </style>
@@ -209,11 +209,11 @@
                   <!-- /.col -->
                   <div class="col-sm-12 invoice-col">
                     <h6>Formulir Peserta Seminar</h6>
-                    <form class="table-bordered">
+                    <form class="table-bordered p-2">
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">NIM</label>
+                        <label for="inputPassword" class="col-sm-2 col-form-label">NIM</label>
                         <div class="col-sm-10">
-                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                          <input type="password" class="form-control" id="inputPassword">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -262,6 +262,11 @@
                           </div>
                         </div>
                       </fieldset>
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <input type="submit" class="form-control btn btn-primary" value="Daftar">
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>

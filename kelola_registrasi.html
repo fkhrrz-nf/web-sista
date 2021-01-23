@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>SISTA | Registration Verification</title>
+  <title>SISTA | Seminar</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
@@ -111,13 +111,37 @@
                 <li class="nav-item">
                   <a href="seminar_admin.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Data Semina Admin</p>
+                    <p>Data Seminar Admin</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="seminar.html" class="nav-link">
+                  <a href="kelola_peserta.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Buat Seminar Baru</p>
+                    <p>Daftar Peserta Seminar</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Manage User
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="kelola_registrasi.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Kelola Registrasi User</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="verifikasi_registrasi.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Verifikasi Registrasi User</p>
                   </a>
                 </li>
               </ul>
@@ -159,6 +183,11 @@
                 <i class="fa fa-clock text-success mr-1"></i>
                 JADWAL SEMINAR TUGAS AKHIR
               </h3>
+              <div class="card-tools">
+              <button class="btn btn-sm btn-outline-success btn-tool text-success btnDaftar">
+                TAMBAH
+              </button>
+            </div>
             </div>
 
               <!-- /.card-header -->
@@ -168,37 +197,78 @@
                     <thead>
                       <tr>
                         <th width="5%">#</th>
-                        <th width="20%">NIM</th>
-                        <th width="20%">MAHASISWA</th>
-                        <th width="15%">SEMINAR</th>
-                        <th width="15%">WAKTU</th>
-                        <th width="15%">RUANGAN</th>
+                        <th width="20%">Username</th>
+                        <th width="20%">Email</th>
+                        <th width="20%">Name</th>
+                        <th width="15%">Role</th>
+                        <th width="10%">Status</th>
+                        <th width="15%">Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
                         <td>726498798</td>
+                        <td>annkazh@nurulfikri.ac.id</td>
                         <td>Annisa Nurul Kazhimah</td>
-                        <td>Seminar Hasil</td>
-                        <td>10:00 04-01-2021</td>
-                        <td>Online</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td>
+                          <button class="btn btn-xs btn-success btnPeserta">
+                            <i class="fa fa-edit"></i>
+                          </button>
+                          <button class="btn btn-xs btn-danger">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td>265326429</td>
-                        <td>Saipul</td>
-                        <td>Seminar Proposal</td>
-                        <td>10:00 04-01-2021</td>
-                        <td>Online</td>
+                        <td>1028371283</td>
+                        <td>fkhrrz@nurulfikri.ac.id</td>
+                        <td>Muhammad Fakhrurrozi</td>
+                        <td>Super User</td>
+                        <td>Active</td>
+                        <td>
+                          <button class="btn btn-xs btn-success btnPeserta">
+                            <i class="fa fa-edit"></i>
+                          </button>
+                          <button class="btn btn-xs btn-danger">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td>827938282</td>
-                        <td>Wak Doyok</td>
-                        <td>Seminar Rambut</td>
-                        <td>10:00 04-01-2021</td>
-                        <td>Online</td>
+                        <td>192371978</td>
+                        <td>anis@nurulfikri.ac.id</td>
+                        <td>Anis Restu Septiyani</td>
+                        <td>Mahasiswa/i</td>
+                        <td>Active</td>
+                        <td>
+                          <button class="btn btn-xs btn-success btnPeserta">
+                            <i class="fa fa-edit"></i>
+                          </button>
+                          <button class="btn btn-xs btn-danger">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>912831082</td>
+                        <td>jusman@nurulfikri.ac.id</td>
+                        <td>Jusman Ali M. Kabes</td>
+                        <td>Mahasiswa/i</td>
+                        <td>Inactive</td>
+                        <td>
+                          <button class="btn btn-xs btn-success btnPeserta">
+                            <i class="fa fa-edit"></i>
+                          </button>
+                          <button class="btn btn-xs btn-danger">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -221,6 +291,80 @@
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
+
+
+      <!-- Modal Daftar Seminar-->
+      <div class="modal fade" id="daftarSeminar" aria-modal="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                <i class="fas fa-globe"></i> Add New User
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row justify-content-between">
+                  <div class="col-md-12">
+                    <div class="form-group row">
+                      <label for="nim" class="col-md-3 col-form-label" style="font-size: 12px">Username</label>
+                      <input type="text" class="form-control col-md-9 form-control-sm " name="nim" id="nim" placeholder="Username">
+                    </div>
+                    <div class="form-group row">
+                      <label for="nim" class="col-md-3 col-form-label" style="font-size: 12px">Email</label>
+                      <input type="text" class="form-control col-md-9 form-control-sm " name="nim" id="nim" placeholder="name@company.com">
+                    </div>
+                    <div class="form-group row">
+                      <label for="nim" class="col-md-3 col-form-label" style="font-size: 12px">Password</label>
+                      <input type="text" class="form-control col-md-9 form-control-sm " name="nim" id="nim" placeholder="********">
+                    </div>
+                    <div class="form-group row">
+                      <label for="nama" class="col-md-3 col-form-label" style="font-size: 12px">Name</label>
+                      <input type="text" class="form-control col-md-9 form-control-sm " name="nama" id="nama" placeholder="Name">
+                    </div>
+                    <div class="form-group row">
+                      <label for="prodi" class="col-md-3 col-form-label" style="font-size: 12px">Role</label>
+                      <select type="text" class="form-control col-md-9 form-control-sm " name="prodi" id="prodi">
+                        <option value="">Super User</option>
+                        <option value="">Admin</option>
+                        <option value="">Mahasiswa/i</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-success btn-sm">DAFTAR</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+      <script>
+        $( ".btnDaftar" ).click(function() {
+          $("#daftarSeminar").modal('show');
+        });
+
+        $( ".btnDaftarPeserta" ).click(function() {
+          $("#daftarSeminar").modal('show');
+        });
+
+        $( ".btnPeserta" ).click(function() {
+          $("#daftarSeminar").modal('show');
+        });
+
+        $( ".btnDetail" ).click(function() {
+          $("#daftarSeminar").modal('show');
+        });
+      </script>
 
     <!-- Main Footer -->
     <footer class="main-footer">
