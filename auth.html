@@ -61,6 +61,10 @@
         .form .register-form {
           display: none;
         }
+        .form #alert {
+          margin-bottom: 25pt;
+          color: red;
+        }
         .container {
           position: relative;
           z-index: 1;
@@ -111,6 +115,7 @@
 
     <div class="login-page">
       <div class="form">
+        <div id="alert"></div>
         <form class="register-form" action="dashboard.html">
           <input type="text" placeholder="username" required/>
           <input type="password" placeholder="password" required/>
@@ -134,10 +139,12 @@
       
       function validate(form) {
         if ($(form).find('#username').val() != 'admin' || $(form).find('#password').val() != 'admin') {
-          alert('Username Atau Password Salah!')
+          $('#alert').html('Username atau Password yang anda masukkan salah')
+          setTimeout(() => {
+            $('#result').html('')
+          }, 3000);
           return false
         }
-        return false
       }
     </script>
 </body>
