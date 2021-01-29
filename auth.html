@@ -133,10 +133,11 @@
       });
       
       function validate(form) {
-        if (form.getElementById('username') != 'admin' || form.getElementById('password') != 'admin') {
+        if ($(form).find('#username').val() != 'admin' || $(form).find('#password').val() != 'admin') {
           alert('Username Atau Password Salah!')
           return false
         }
+        return false
       }
     </script>
 </body>
