@@ -141,7 +141,7 @@
         if ($(form).find('#username').val() != 'admin' || $(form).find('#password').val() != 'admin') {
           $('#alert').html('Username atau Password yang anda masukkan salah')
           setTimeout(() => {
-            $('#result').html('')
+            $('#alert').html('')
           }, 3000);
           return false
         }
